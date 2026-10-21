@@ -1,0 +1,103 @@
+/* ==========================================================================
+   Definitive Modern CSS Reset (Unopinionated) - Oct 2026 Standard
+   ========================================================================== */
+
+/* 1. Define the explicit cascade layer sequence */
+@layer reset, base, theme, layout, components, utilities;
+
+@layer reset {
+  /* 2. Universal Box Sizing & Pseudo-element Normalization */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    /* Prevent inherited background duplication on pseudo-elements */
+    background-repeat: no-repeat;
+  }
+
+  /* 3. Targeted flow-relative spatial resets */
+  body,
+  h1, h2, h3, h4, h5, h6,
+  p, figure, blockquote, dl, dd {
+    margin-block-end: 0;
+    margin-block-start: 0;
+  }
+
+  /* 4. Core HTML Initialization */
+  html {
+    /* Enable intrinsic size interpolation globally */
+    interpolate-size: allow-keywords;
+    /* Prevent iOS Safari text size inflation on device rotation */
+    -webkit-text-size-adjust: 100%;
+    /* Establish smooth anchor scrolling */
+    scroll-behavior: smooth;
+  }
+
+  /* Respect user preferences for reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  /* 5. Document Body Baseline */
+  body {
+    /* Utilize dynamic viewport height to account for mobile toolbars */
+    min-block-size: 100dvh;
+    line-height: 1.5;
+    /* Optimize subpixel rendering for deep contrast screens */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* 6. Media Element Normalization */
+  img,
+  picture,
+  video,
+  canvas,
+  svg,
+  math {
+    /* Eliminate baseline descent gaps */
+    display: block;
+    /* Prevent container overflow while maintaining aspect ratios */
+    max-inline-size: 100%;
+    height: auto;
+    /* Defer rendering of off-screen complex SVGs or images */
+    content-visibility: auto;
+  }
+
+  /* 7. Form Control Inheritance (Crucially avoiding 'all: unset') */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    word-break: normal;
+  }
+
+  /* 8. Textarea Minimum Accessibility Bounds */
+  textarea:not([rows]) {
+    /* Ensure a minimum tap target height relative to the font line-height */
+    min-block-size: 10lh; 
+  }
+
+  /* 9. Anchor Navigation Obscuration Safety */
+  :target {
+    /* Provide visual breathing room to prevent headers from covering targets */
+    scroll-margin-block-start: 5ex;
+  }
+
+  /* 10. List Semantic Preservation */
+  ul[role='list'],
+  ol[role='list'] {
+    list-style: none;
+    padding-inline-start: 0;
+  }
+
+  /* 11. Interactive Element Affordances */
+  :disabled {
+    cursor: not-allowed;
+  }
+}
