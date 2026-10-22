@@ -23,6 +23,14 @@ A definitive, dual-layer CSS foundation optimized for modern web development in 
 
 Import the layers at the very top of your main stylesheet to establish your foundation before adding component or utility styles:
 
+### CDN
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/LewisCrouch/baselinecss@v2026-10/reset.min.css" integrity="sha384-nJ2fycD5UFWdGX5I0l/5WIGTXJFqf1mKOyVqgR0G23xjwigeYfO4i2YuRMbZF8jo" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/LewisCrouch/baselinecss@v2026-10/reboot.min.css" integrity="sha384-kvs48MxRJY8t6ex8fr7PDV/cjyYODjz9XwNup1+X3Eo7HCiAVDBIXlCNB7/UB8Xl" crossorigin="anonymous">
+```
+
+### In your project
+### 
 ```css
 /* main.css */
 @import url('reset.min.css') layer(reset);
