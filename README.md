@@ -6,7 +6,7 @@ A definitive, dual-layer CSS foundation optimized for modern web development in 
 
 ## 🚀 Features
 
-- **Cascade Layers (`@layer`)**: Built natively on `@layer reset` and `@layer base` to ensure zero specificity conflicts with your component CSS.
+- **Cascade Layers (`@layer`)**: Built natively on `@layer reset`, `@layer theme` and `@layer base` to ensure zero specificity conflicts with your component CSS.
 - **Zero Magic Numbers**: Fully driven by CSS Custom Properties, `calc()`, `clamp()`, and relative units (`ch`, `rem`, `lh`).
 - **Modern Layout & Viewports**: Utilizes logical properties (e.g., `margin-block`, `inline-size`) for native RTL/internationalization support, along with dynamic viewport units (`dvh`/`svh`).
 - **Advanced Typography**: Integrates `text-wrap: balance` (for headings), `text-wrap: pretty` (for body), and fluid typography scales.
