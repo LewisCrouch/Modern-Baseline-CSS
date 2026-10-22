@@ -1,6 +1,6 @@
 # BaselineCSS v2026.10
 
-*Disclaimer: This project was created Gemini Deep Research (AI).*
+*Disclaimer: This project was created using AI (Gemini Deep Research).*
 
 A definitive, dual-layer CSS foundation optimized for modern web development in 2026. This project provides both an unopinionated **Reset** to normalize cross-browser quirks and an opinionated **Reboot** to establish a robust, fluid, and accessible baseline for modern design systems.
 
