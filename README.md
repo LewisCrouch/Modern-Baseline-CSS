@@ -25,8 +25,8 @@ Import the layers at the very top of your main stylesheet to establish your foun
 
 ```css
 /* main.css */
-@import url('reset.css') layer(reset);
-@import url('reboot.css') layer(base);
+@import url('reset.min.css') layer(reset);
+@import url('reboot.min.css') layer(base);
 
 /* Your custom layers and styles go here */
 @layer components, utilities;
