@@ -1,6 +1,8 @@
-/* ==========================================================================
-   BaselineCSS Reset (Unopinionated) - Oct 2026
-   ========================================================================== */
+/*!
+  * BaselineCSS Reset v2026-10 (https://github.com/LewisCrouch/baselinecss)
+  * Copyright 2026 Lewis Crouch
+  * Licensed under MIT (https://github.com/LewisCrouch/baselinecss/blob/main/LICENSE)
+  */
 
 /* 1. Define the explicit cascade layer sequence */
 @layer reset, base, theme, layout, components, utilities;
