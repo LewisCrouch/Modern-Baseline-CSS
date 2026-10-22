@@ -1,6 +1,8 @@
-/* ==========================================================================
-   Baseline-CSS Reboot (Opinionated) - Oct 2026
-   ========================================================================== */
+/*!
+  * BaselineCSS Reboot v2026-10 (https://github.com/LewisCrouch/baselinecss)
+  * Copyright 2026 Lewis Crouch
+  * Licensed under MIT (https://github.com/LewisCrouch/baselinecss/blob/main/LICENSE)
+  */
 
 @layer theme {
   :root {
