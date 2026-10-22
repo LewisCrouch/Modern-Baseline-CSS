@@ -29,15 +29,20 @@ Import the layers at the very top of your main stylesheet to establish your foun
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/LewisCrouch/baselinecss@v2026-10/reboot.min.css" integrity="sha384-kvs48MxRJY8t6ex8fr7PDV/cjyYODjz9XwNup1+X3Eo7HCiAVDBIXlCNB7/UB8Xl" crossorigin="anonymous">
 ```
 
-### In your project
-### 
+### Define layer order in your project's main CSS file
 ```css
-/* main.css */
-@import url('reset.min.css') layer(reset);
-@import url('reboot.min.css') layer(base);
+/* Define ALL layers in order (lowest priority to highest) */
+/* BaselineCSS uses reset, theme and base. */
+@layer reset, theme, base, components, utilities;
 
-/* Your custom layers and styles go here */
-@layer components, utilities;
+/* Write your custom styles */
+@layer components {
+  /* ... */
+}
+
+@layer utilities {
+  /* ... */
+}
 ```
 
 ## 📚 Background & Research
