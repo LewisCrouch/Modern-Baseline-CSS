@@ -1,4 +1,4 @@
-# BaselineCSS v2026.10
+# BaselineCSS v2026-10
 
 *Disclaimer: This project was created using AI (Gemini Deep Research).*
 
